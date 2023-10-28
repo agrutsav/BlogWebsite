@@ -38,7 +38,7 @@ const BlogCard = ({ blog: { title, desc, imageUrl, likes, authorId, _id } }) => 
         }
       }
     } catch (error) {
-      console.log(error)
+      // console.log(error)
     }
   }
 

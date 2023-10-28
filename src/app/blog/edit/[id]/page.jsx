@@ -81,7 +81,7 @@ const Edit = (ctx) => {
 
             router.push(`/blog/${blog?._id}`)
         } catch (error) {
-            console.log(error)
+            // console.log(error)
         }
     }
 

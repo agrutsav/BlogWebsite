@@ -23,7 +23,7 @@ const Comment = ({comment, setComments}) => {
         return [...prev].filter((c) => c?._id !== comment?._id)
       })
     } catch (error) {
-      console.log(error)
+      // console.log(error)
     }
   }
 

@@ -35,7 +35,8 @@ const Login = () => {
                 toast.error("Error occured while logging")
             }
         } catch (error) {
-            console.log(error)
+            // console.log(error)
+            // return null
         }
     }
 

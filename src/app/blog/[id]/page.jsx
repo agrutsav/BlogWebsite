@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { useSession } from 'next-auth/react'
@@ -122,7 +122,7 @@ const BlogDetails = (ctx) => {
             
             setCommentText("")
         } catch (error) {
-            console.log(error)
+            // console.log(error)
         }
     }
 

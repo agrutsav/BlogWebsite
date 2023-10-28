@@ -59,7 +59,9 @@ const CreateBlog = () => {
 
           router.push(`/blog/${blog?._id}`)
         } catch (error) {
-            console.log(error)
+            // console.log(error)
+            // return null
+            // throw new Error("Error occured")
         }
     }
 
@@ -83,7 +85,7 @@ const CreateBlog = () => {
 
           return imageUrl
         } catch (error) {
-            console.log(error)
+            // console.log(error)
         }
     }
 
