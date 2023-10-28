@@ -24,6 +24,11 @@ const BlogDetails = (ctx) => {
     const { data: session } = useSession()
     const router = useRouter()
 
+    
+    useEffect(() => {
+        console.log('window.innerHeight', window.innerHeight);
+    }, []); 
+
     useEffect(() => {
       async function fetchComments(){
         const res = await fetch(`http://localhost:3000/api/comment/${ctx.params.id}`, {cache: 'no-store'})
@@ -36,6 +41,7 @@ const BlogDetails = (ctx) => {
 
 
     useEffect(() => {
+
         async function fetchBlog() {
             const res = await fetch(`http://localhost:3000/api/blog/${ctx.params.id}`, { cache: 'no-store' })
             const blog = await res.json()
