@@ -10,6 +10,7 @@ export async function fetchBlogs(){
 }
 
 export default async function Home() {
+  
   const blogs = await fetchBlogs()
 
   return (

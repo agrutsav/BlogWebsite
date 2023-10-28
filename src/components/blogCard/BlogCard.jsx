@@ -26,8 +26,6 @@ const BlogCard = ({ blog: { title, desc, imageUrl, likes, authorId, _id } }) => 
         },
         method: 'PUT'
       })
-
-      console.log(res)
       if (res.ok) {
         if (isLiked) {
           setIsLiked(prev => !prev)
