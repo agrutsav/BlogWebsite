@@ -32,8 +32,6 @@ const Register = () => {
             method: 'POST',
             body: JSON.stringify({username, email, password})
         })
-
-        console.log(await res.json())
         if(res.ok){
             toast.success("Successfully registered the user")
             setTimeout(() => {
