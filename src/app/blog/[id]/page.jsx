@@ -77,7 +77,7 @@ const BlogDetails = (ctx) => {
                 method: 'PUT'
             })
 
-            console.log(res)
+            
             if (res.ok) {
                 if (isLiked) {
                     setIsLiked(prev => !prev)
